@@ -1,0 +1,28 @@
+# Gradle / build output
+.gradle/
+.kotlin/
+build/
+**/build/
+
+# Local config (SDK path, API keys)
+local.properties
+
+# IDE
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs / crash dumps
+*.log
+replay_pid*.log
+hs_err_pid*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Signing
+*.jks
+*.keystore

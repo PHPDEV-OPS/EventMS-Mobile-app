@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      The EventMS backend is normally run on a development machine over plain
+      HTTP (http://10.0.2.2:8080 from the emulator, or a LAN address such as
+      http://192.168.x.x:8080 from a phone), so cleartext has to be allowed.
+      Neon Auth is always reached over HTTPS regardless of this setting.
+
+      For a production release, delete the base-config below so cleartext is
+      refused everywhere and point the app at an https:// backend.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

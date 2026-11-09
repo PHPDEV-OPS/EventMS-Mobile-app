@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The payment page dropping away. Accelerating out is slightly quicker than the
+  entry, which is what makes a dismissal feel responsive rather than sluggish.
+-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="280"
+    android:fromYDelta="0"
+    android:toYDelta="100%p"
+    android:interpolator="@android:interpolator/accelerate_quint" />
